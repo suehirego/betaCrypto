@@ -1,25 +1,55 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
+import SideBar from './Components/SideBar';
+import routes from './Components/routes';
+import { useStyles } from './Components/Sytles';
+
+const App = () => {
+
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    
+    <Router>
+
+    <div className="appRoot">
+    {/* className={classes.appRoot} */}
+
+      <SideBar/>
+
+      {/* <Router> */}
+
+        <div className='others'>
+
+          <Switch>
+
+            {routes.map((route, index) => {
+              return(
+
+                <Route exact  key={index} path={route.path}>
+                  {route.component}
+                </Route>
+
+              );
+            })}
+       
+          </Switch>
+
+
+        </div>
+
+      
+      {/* </Router> */}
+
     </div>
+
+    </Router>
+
+
   );
-}
+};
 
 export default App;

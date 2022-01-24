@@ -1,0 +1,9 @@
+.sideBar{
+      flex: 1;
+
+      background-color: #152349;
+      /* height: 100vh; */
+      position: relative;
+      /* padding: 20px; */
+      /* overflow-y: hidden; */
+}
