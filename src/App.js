@@ -2,13 +2,13 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import SideBar from './Components/SideBar';
-import routes from './Components/routes';
-import { useStyles } from './Components/Sytles';
+import SideBar from './sidebar/SideBar';
+import routes from './sidebar/routes';
+// import { useStyles } from './Components/Sytles';
 
 const App = () => {
 
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
 
@@ -17,6 +17,7 @@ const App = () => {
 
     <div className="appRoot">
     {/* className={classes.appRoot} */}
+    {/* className="appRoot" */}
 
       <SideBar/>
 

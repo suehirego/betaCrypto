@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from 'react-router-dom';
 
 // internal
-import { useStyles } from './Sytles';
+import { useStyles } from '../Components/Sytles';
 
 //External - @material-ui
 import { Icon, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
@@ -21,7 +21,7 @@ const MenuItem = ({label, icon, activeIcon, path }) => {
 
             setActive( location.pathname === path);
             
-      }, [location]);
+      }, [location, path]);
 
 
 

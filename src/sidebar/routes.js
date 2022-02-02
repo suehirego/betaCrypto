@@ -12,20 +12,20 @@ import PhoneActive  from "../assets/PhoneActive.png";
 import Trading from '../Pages/Trading';
 import Journey from '../Pages/Journey';
 import Contact from '../Pages/Contact';
-import ForexTracker from "../Pages/ForexTracker";
+import ForexTracker from "../Pages/Home";
 
 const routes = [
 
       {
-            label: 'Forex Tracker',
+            label: 'Home',
             path: '/',
             icon: Dashboard,
             activeIcon: DashboardActive,
             component: ForexTracker,
       },
       {
-            label: 'What is Trading',
-            path: '/what-is-trading',
+            label: 'Trading',
+            path: '/crypto-trading',
             icon: TradingIcon,
             activeIcon: TradingActive,
             component: Trading,
@@ -38,7 +38,7 @@ const routes = [
             component: Journey,
       },
       {
-            label: 'Contact Us',
+            label: 'Contact',
             path: '/contact-us',
             icon: Phone,
             activeIcon: PhoneActive,

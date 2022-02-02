@@ -1,13 +1,24 @@
 import React from 'react';
+import NavBar from '../Components/NavBar';
+import CoinsTable from '../Components/CoinsTable';
+
 
 const Trading = () => {
-  return (
-      <div>
 
-            <h1>Forex Trading</h1>
+    
 
-      </div>
-   );
+      return (
+
+            <>
+                  <NavBar/>
+
+                  SUSAN HIREGO
+
+                 
+                  <CoinsTable/>
+                  
+            </>
+      );
 };
 
 export default Trading;
