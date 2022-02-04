@@ -15,7 +15,7 @@ const HomeBanner = () => {
                         <div className={classes.bannerText}>
 
                               <Typography
-                                    variant='h4'
+                                    variant='h5'
                                     style={{
                                           marginBottom: 15,
                                     }}
@@ -29,7 +29,7 @@ const HomeBanner = () => {
                                           marginBottom: 15,
                                     }}
                               >
-                                    LIKE A PRO
+                                    Like a Pro
                               </Typography>
 
 

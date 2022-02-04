@@ -12,9 +12,6 @@ const Trading = () => {
             <>
                   <NavBar/>
 
-                  SUSAN HIREGO
-
-                 
                   <CoinsTable/>
                   
             </>

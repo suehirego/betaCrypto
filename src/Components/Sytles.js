@@ -2,14 +2,14 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles({
 
+
   // ### NavBar ###
   appTitle:{
     flex: 1,
     cursor: 'pointer',
     fontWeight: 'bold',
     fontSize: 21,
-    // color: "#ff5d00"
-    color: 'gold'
+    color: "#eebc1d"
   },
 
   // ### SIDEBAR ###
@@ -22,14 +22,16 @@ export const useStyles = makeStyles({
     alignItems: "center",
     justifyContent: "left",
   },
-  sidebarDrawer:{
-    width: "430px",
-    padding: '20px',
-    backgroundColor: '#152349',
-  },
-  paper: {
-    background: '#152349',
-  },
+  // sidebarDrawer:{
+  //   width: "430px",
+  //   padding: '20px',
+  //   backgroundColor: '#152349',
+  //   position: "sticky",
+  //   height: '100vh',
+  // },
+  // paper: {
+  //   background: '#152349',
+  // },
   sideBarList:{
     display: 'flex',
     flexDirection: 'column',
@@ -111,7 +113,19 @@ export const useStyles = makeStyles({
   // ### TRADING PAGE ###
   coins:{
     padding: 35,
-  }
+  },
+  tableRow: {
+    backgroundColor: "#152349",
+    cursor: 'pointer',
+      "&:hover": {
+        backgroundColor: "#0f1a36"
+      },
+  },
+  tableBody: {
+    overflowY: 'scroll',
+    scrollbarColor: 'gold',
+    height: "50.2vh",
+  },
 
 
 });

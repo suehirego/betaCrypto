@@ -16,6 +16,14 @@ a {
   display: flex;
   
 }
+.sideBar{
+  flex: 1;
+  background-color: #0f1a36;
+  height: 100vh;
+  /* position: fixed; */
+  padding: 10px 20px;
+}
+
 .others{
   flex: 4;
   color: #fff;
