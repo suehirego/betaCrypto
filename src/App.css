@@ -18,7 +18,7 @@ a {
 }
 .sideBar{
   flex: 1;
-  background-color: #0f1a36;
+  background-color: #0a192f;
   height: 100vh;
   /* position: fixed; */
   padding: 10px 20px;
@@ -27,7 +27,7 @@ a {
 .others{
   flex: 4;
   color: #fff;
-  background-color: #152349;
+  background-color: #020c1b;
 }
 
 .contactWrapper{

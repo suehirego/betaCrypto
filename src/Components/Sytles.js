@@ -36,13 +36,14 @@ export const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'left',
-    marginTop: '20px',
+    marginTop: '40px',
   },
   menuItemIcon:{
     width: "100%"
   },
   menuItem:{
     color: "#a8b2d1",
+    fontWeight: "700",
     width: '100%',
     borderRadius: 10,
     marginBottom: 10,
@@ -58,12 +59,10 @@ export const useStyles = makeStyles({
     fontWeight: "bold",
     backgroundColor: '#ffffe1',
   },
-  sideImg:{
-    width: '100%',
-    marginTop: '46px',
-  },
-  sidebarDrawerCollapse:{
-    width: 50,
+  sidebarFooter:{
+    marginTop: "250px",
+    color: "darkgrey",
+    fontSize: "11px"
   },
 
   // ### HOME PAGE ###
@@ -115,16 +114,21 @@ export const useStyles = makeStyles({
     padding: 35,
   },
   tableRow: {
-    backgroundColor: "#152349",
+    backgroundColor: '#020c1b',
     cursor: 'pointer',
       "&:hover": {
-        backgroundColor: "#0f1a36"
+        backgroundColor: "#0a192f"
       },
+  },
+  tableCell:{
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 10
   },
   tableBody: {
     overflowY: 'scroll',
     scrollbarColor: 'gold',
-    height: "50.2vh",
+    height: "53vh",
   },
 
 

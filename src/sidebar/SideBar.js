@@ -23,16 +23,6 @@ const SideBar = () => {
 
       <div className="sideBar">
 
-        {/* <Drawer  
-          classes={{ paper: classes.sidebarDrawer}}
-          variant='permanent' open={true}
-        > */}
-
-          {/* open and collapse icons */}
-          {/* <div className={classes.sidebarToolbar}>
-            <ChevronLeftIcon className={classes.topIcon} /> 
-          </div> */}
-
           <div className={classes.sidebarLogoContainer}>
 
             <img  className={classes.sidebarLogo} src={process.env.PUBLIC_URL + "/newlogo.png"} alt="" />
@@ -56,10 +46,11 @@ const SideBar = () => {
 
           </List>
 
-          <img  className={ classes.sideImg} src={process.env.PUBLIC_URL + "/sideimg.png"}  alt=""/>
-         
+          <div className={classes.sidebarFooter}>
+            <span>Built by Susan Hirego</span>
+          </div>
 
-        {/* </Drawer> */}
+      
 
       </div>
 
