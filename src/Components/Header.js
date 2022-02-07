@@ -59,8 +59,8 @@ const Header = () => {
                                     labelId="demo-simple-select-label"
                                     id="demo-simple-select"
                                     style={{
-                                          width: 100,
-                                          height: 50,
+                                          width: 80,
+                                          height: 40,
                                           marginRight: 15,
                                     }}
                                     value={currency}
