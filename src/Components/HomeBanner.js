@@ -22,7 +22,7 @@ const HomeBanner = () => {
                                           color: '#fff',
                                     }}
                               >
-                                    The World's Trusted Cryptourrency Rates
+                                    The World's Trusted Cryptocurrency Rates
                               </Typography>
 
                               <Typography

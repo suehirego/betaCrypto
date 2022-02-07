@@ -10,7 +10,8 @@ export const useStyles = makeStyles((theme) => ({
 
   },
   appBarLogo:{
-    width: '80px'
+    width: '80px',
+    marginTop: '-3px'
   },
   appBarLogoContainer:{
     display:"flex",
