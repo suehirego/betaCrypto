@@ -1,54 +1,32 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-import SideBar from './sidebar/SideBar';
-import routes from './sidebar/routes';
-// import { useStyles } from './Components/Sytles';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./Components/Header";
+import Home from "./Pages/Home";
+import Trading from "./Pages/Trading";
 
 const App = () => {
-
-  // const classes = useStyles();
-
   return (
 
-    
-    <Router>
-
     <div className="appRoot">
-    {/* className={classes.appRoot} */}
-    {/* className="appRoot" */}
 
-      <SideBar/>
+      <Router>
 
-      {/* <Router> */}
+        <Header />
 
-        <div className='others'>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-          <Switch>
+          <Route path="/crypto-trading">
+            <Trading/>
+          </Route>
+        </Switch>
 
-            {routes.map((route, index) => {
-              return(
-
-                <Route exact  key={index} path={route.path}>
-                  {route.component}
-                </Route>
-
-              );
-            })}
-       
-          </Switch>
-
-
-        </div>
-
-      
-      {/* </Router> */}
+      </Router>
 
     </div>
-
-    </Router>
-
 
   );
 };

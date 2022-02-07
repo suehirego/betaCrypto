@@ -9,27 +9,31 @@ const HomeBanner = () => {
 
       return (
 
-            <div>
-                  <Container className={classes.banner}>
+            <div className={classes.banner}>
+                  <Container className={classes.bannerWrapper}>
 
                         <div className={classes.bannerText}>
+
+                              <Typography
+                                    variant='h4'
+                                    style={{
+                                          fontWeight: 'bold',
+                                          marginBottom: 15,
+                                          color: '#fff',
+                                    }}
+                              >
+                                    The World's Trusted Cryptourrency Rates
+                              </Typography>
 
                               <Typography
                                     variant='h5'
                                     style={{
                                           marginBottom: 15,
+                                          color: '#fff',
                                     }}
                               >
-                                    Trade Crypto
-                              </Typography>
-                              <Typography
-                                    variant='h3'
-                                    style={{
-                                          fontWeight: 'bold',
-                                          marginBottom: 15,
-                                    }}
-                              >
-                                    Like a Pro
+                                    Live Cryptocurrency and forex exchange rates
+
                               </Typography>
 
 

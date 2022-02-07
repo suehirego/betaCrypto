@@ -1,104 +1,63 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-export const useStyles = makeStyles({
-
+export const useStyles = makeStyles((theme) => ({
 
   // ### NavBar ###
-  appTitle:{
-    flex: 1,
-    cursor: 'pointer',
-    fontWeight: 'bold',
-    fontSize: 21,
-    color: "#eebc1d"
-  },
+  toolBar:{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
 
-  // ### SIDEBAR ###
-     
-  sidebarLogo:{
-    width: '50%'
   },
-  sidebarLogoContainer:{
+  appBarLogo:{
+    width: '80px'
+  },
+  appBarLogoContainer:{
     display:"flex",
     alignItems: "center",
     justifyContent: "left",
   },
-  // sidebarDrawer:{
-  //   width: "430px",
-  //   padding: '20px',
-  //   backgroundColor: '#152349',
-  //   position: "sticky",
-  //   height: '100vh',
-  // },
-  // paper: {
-  //   background: '#152349',
-  // },
-  sideBarList:{
+  appBarList:{
     display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'left',
-    marginTop: '40px',
+    gap: 30,
+    listStyle: 'none',
+    cursor: 'pointer',
   },
-  menuItemIcon:{
-    width: "100%"
-  },
-  menuItem:{
-    color: "#a8b2d1",
-    fontWeight: "700",
-    width: '100%',
-    borderRadius: 10,
-    marginBottom: 10,
-
-    '&:focus': {
-      color: "#000080",
-      fontWeight: "bold",
-      backgroundColor: '#ffffe1',
-    },
-  },
-  menuItemActive:{
-    color: "#000080",
-    fontWeight: "bold",
-    backgroundColor: '#ffffe1',
-  },
-  sidebarFooter:{
-    marginTop: "250px",
-    color: "darkgrey",
-    fontSize: "11px"
-  },
+ 
 
   // ### HOME PAGE ###
 
   banner: {
-    // height: 400,
+    backgroundImage: 'url(./banner3.png)'
+  },
+  bannerWrapper:{
+    height: 'calc(100vh - 64px)',
     display: 'flex',
     flexDirection: 'column',
     paddingTop: 25,
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: '20px'
+    justifyContent: 'space-around',
   },
   bannerText: {
     display: 'flex',
     height: '40%',
-    paddingTop: 55,
+    paddingTop: 45,
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
   },
   bannerCarousel: {
-    width: "900px",
     padding: 45,
     justifyContent: 'center',
     alignItems: 'center',
     gap: '20px',
   },
   carousel: {
-    padding: "35px 0 35px 35px",
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
   },
   carouselItems: {
-    paddingTop: 35,
+    paddingTop: 25,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -111,7 +70,7 @@ export const useStyles = makeStyles({
 
   // ### TRADING PAGE ###
   coins:{
-    padding: 35,
+    padding: 25,
   },
   tableRow: {
     backgroundColor: '#020c1b',
@@ -125,12 +84,10 @@ export const useStyles = makeStyles({
     flexDirection: 'row',
     gap: 10
   },
-  tableBody: {
-    overflowY: 'scroll',
-    scrollbarColor: 'gold',
-    height: "53vh",
+  tablePaper:{
+    backgroundColor: '#020c1b',
   },
 
 
-});
+}));
     

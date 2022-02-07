@@ -7,8 +7,6 @@ import { TrendingCoins } from '../config/api';
 import axios from 'axios';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import { Link } from 'react-router-dom';
-
 
 
 const HomeCarousel = () => {
@@ -52,7 +50,7 @@ const HomeCarousel = () => {
 
             return(
 
-                  <Link className={classes.carouselItems} to={`/coins/${coin.id}`}>
+                  <div className={classes.carouselItems}>
 
                         <img
                               src={coin?.image}
@@ -74,7 +72,7 @@ const HomeCarousel = () => {
                         <span style={{ fontSize: 20, fontWeight: 500}}>
                               {symbol} {numberWithCommas(coin?.current_price.toFixed(2))}
                         </span>
-                  </Link>
+                  </div>
 
 
             )
@@ -93,7 +91,7 @@ const HomeCarousel = () => {
 
       return (
 
-            <div className={classes.carouselItem}>
+            <div className={classes.carousel}>
 
                
                   <AliceCarousel

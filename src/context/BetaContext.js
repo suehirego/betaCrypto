@@ -13,7 +13,9 @@ const BetaContext = ({children}) => {
       useEffect(() => {
             
             if(currency === "USD") setSymbol("$");
-            if(currency === "UGX") setSymbol("UGX");
+            else if (currency === "EUR") setSymbol("€");
+            else if (currency === "AED") setSymbol("AED");
+            else if (currency === "GBP") setSymbol("GBP");
 
 
       },[currency]);
