@@ -7,7 +7,7 @@ I picked a free API from https://www.coingecko.com/ to fetch all the cryptocurre
 
 Technologies used: 
 - React.js
-JavaScript
+-JavaScript
 - Material-UI
 - Axios 
 
