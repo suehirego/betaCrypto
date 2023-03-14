@@ -1,0 +1,133 @@
+.single{
+    height: 100vh;
+    display: flex;
+    padding: 150px 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.coinImage{
+    flex: 1;
+    display: flex;
+    margin-top: 25px;
+    padding-right: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.largeImg{
+    height: 160px;
+    margin-bottom: 20px;
+}
+.coinName{
+    font-size: 30px;
+    color: #282828;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+.coinName2{
+    display: none;
+}
+.coinDesc{
+    padding: 0px 20px;
+    text-align: justify;
+    font-family: 'Varela Round', sans-serif;
+}
+.mrtData{
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    padding: 0px 25px;
+    margin-top: 30px;
+    flex-direction: column;
+    font-family: 'Varela Round', sans-serif;
+}
+.mrtDataItem{
+    gap: 10px;
+    display: flex;
+}
+
+.details{
+    flex: 1.5;
+    display: flex;
+    margin-top: 25px;
+    align-items: flex-start;
+    flex-direction: column;
+    border-left: 1.2px solid gray;
+}
+
+@media screen and (max-width: 960px){
+    .single{
+        padding: 150px 100px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .single {
+        padding: 20px 80px;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .coinImage{
+        flex: 1;
+        text-align: center;
+        border-right: none;
+    }
+    .largeImg{
+        height: 150px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+    .coinName{
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .details{
+        border: none;
+        display: flex;
+        padding: 0px 25px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .coinDesc{
+        padding: 0px 20px;
+        text-align: center;
+    }
+    .mrtData{
+        display: flex;
+        align-items: center;
+    }
+    .mrtDataItem{
+        text-align: center;
+    }
+    
+    
+}
+
+@media screen and (max-width: 576px){
+    .single{
+        height: 100vh;
+        padding: 50px 0px;
+    }
+   
+}
+
+@media screen and (max-width: 480px){
+    .details{
+        margin-top: -100px;
+    }
+    .largeImg{
+        height: 190px;
+        margin-bottom: 0px;
+    }
+    .coinDesc{
+        font-size: 17px;
+    }
+    .mrtDataItem{
+        font-size: 18px;
+    }
+}

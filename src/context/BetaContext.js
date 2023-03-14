@@ -17,7 +17,6 @@ const BetaContext = ({children}) => {
             else if (currency === "AED") setSymbol("AED");
             else if (currency === "GBP") setSymbol("GBP");
 
-
       },[currency]);
 
       return (

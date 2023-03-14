@@ -1,18 +1,11 @@
 import React from 'react';
-import CoinsTable from '../Components/CoinsTable';
+import CoinsTable from '../Components/trading/CoinsTable';
 
 
 const Trading = () => {
-
-    
-
       return (
 
-            <>
-
-                  <CoinsTable/>
-
-            </>
+            <CoinsTable/>
       );
 };
 
