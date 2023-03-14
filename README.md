@@ -15,3 +15,4 @@ Next Steps:
 - Implement a search bar to filter the CoinsList for a single coin
 - Create a calculator on the single coins page
 - Create a forex exchange page
+
