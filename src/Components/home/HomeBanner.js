@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { BsArrowRight} from 'react-icons/bs';
 
 const HomeBanner = () => {
 
@@ -11,7 +11,7 @@ const HomeBanner = () => {
                 <div className='subHeading'>
                     <img className='bannerLogo' src="assets/whitelogo.png" alt="" />
                     <p>Trade Betacoin for free</p>
-                    <ArrowForwardIcon className='bannerIcon' />
+                    <BsArrowRight className='bannerIcon' />
                 </div>
                 <div className='heading'>
                     <h2 className='bannerHeadingText'>Jump start your crypto portfolio</h2>

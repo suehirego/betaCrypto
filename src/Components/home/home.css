@@ -150,10 +150,8 @@
     background-color: rgba(120, 255, 215, 0.5);
     margin-top: 100px;
 }
-
 .slideCarousel {
     gap: 20px;
-    padding: 5px;
     height: 100%;
     padding: 30px 50px;
     align-items: center;
@@ -358,6 +356,9 @@
     .bannerImage2 {
         margin-top: 0px;
         height: 220px;
+    }
+    .slideCarousel {
+        padding: 30px 38px;
     }
     .benefit {
         text-align: center;

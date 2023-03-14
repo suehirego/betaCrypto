@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@mui/styles';
 
 export const useStyles = makeStyles((theme) => ({
 
@@ -17,10 +17,6 @@ export const useStyles = makeStyles((theme) => ({
         padding: '0px 30px',
         alignItems: 'center',
         justifyContent: 'space-between',
-        [theme.breakpoints.down('sm')]: {
-            padding: '0px 0px',
-        },
-
     },
     appBarLogo: {
         width: '30px',
@@ -31,9 +27,6 @@ export const useStyles = makeStyles((theme) => ({
         color: '#5E17EB',
         fontWeight: '500',
         fontFamily: `'Varela Round', sans-serif`,
-        [theme.breakpoints.down('sm')]: {
-           display: 'none',
-        },
     },
     appBarLogoContainer: {
         display: "flex",
@@ -49,9 +42,6 @@ export const useStyles = makeStyles((theme) => ({
         height: '40px',
         alignItems: 'cetnter',
         justifyContent: 'center',
-        [theme.breakpoints.down('sm')]: {
-            gap: 20,
-        },
     },
     listItem: {
         padding: '10px',
@@ -76,6 +66,18 @@ export const useStyles = makeStyles((theme) => ({
     },
     menuItem:{
         fontSize: '14px'
+    },
+
+    "@media (max-width: 720px)": {
+        logoText: {
+          display: "none"
+        },
+        toolbar:{
+            padding: '0px 0px',
+        },
+        appBarList:{
+            gap: 20,
+        },
     }
 
 }));

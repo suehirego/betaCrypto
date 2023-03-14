@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
 import { useState, useEffect } from 'react';
-import Paper from '@material-ui/core/Paper';
+import Paper from '@mui/material/Paper';
 import { useStyles } from './tradingStyle';
 import axios from 'axios';
 import { CoinList } from '../../config/api';
@@ -16,7 +16,7 @@ import {
     TableHead,
     TableRow,
     TablePagination
-} from '@material-ui/core';
+} from '@mui/material';
 import { useHistory } from 'react-router-dom';
 
 

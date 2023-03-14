@@ -80,9 +80,16 @@ const HomeCarousel = () => {
     });
 
     //resposive carousel
+    // const responsive = {
+    //     0: { items: 2, },
+    //     512: { items: 4 },
+    //     720: { items: 3 },
+    //     1024: { items: 5 },
+    // };
+
     const responsive = {
         0: { items: 2, },
-        512: { items: 4 },
+        576: { items: 3 },
         720: { items: 3 },
         1024: { items: 5 },
     };
