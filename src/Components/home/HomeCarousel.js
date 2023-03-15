@@ -65,8 +65,8 @@ const HomeCarousel = () => {
                     </div>
                
 
-                <div style={{ fontSize: 20, fontWeight: 500 }}>
-                    {symbol} 
+                <div style={{ fontSize: 18, fontWeight: 500 }}>
+                    {symbol + ""} 
                     {coin?.current_price.toFixed(2).toLocaleString(navigator.language, { minimumFractionDigits: 0 })}
                 </div>
             </div>
