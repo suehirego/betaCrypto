@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Components/appbar/Topbar";
 import Home from "./Pages/Home";
 import Trading from "./Pages/Trading";
-import HomeCarousel from "./Components/home/HomeCarousel";
 import SingleCoin from "./Pages/SingleCoin";
 
 const App = () => {
