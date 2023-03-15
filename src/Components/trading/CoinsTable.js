@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState, useEffect } from 'react';
 import Paper from '@mui/material/Paper';
 import { useStyles } from './tradingStyle';
@@ -30,16 +30,17 @@ const CoinsTable = () => {
 
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(10);
+    const ref = useRef();
 
     const handleChangePage = (event, newPage) => {
+        ref.current.scrollIntoView(); 
         setPage(newPage);
-    };
+      };
 
     const handleChangeRowsPerPage = (event) => {
         setRowsPerPage(+event.target.value);
         setPage(0);
     };
-
 
     const fetchAllCoins = async () => {
         const { data } = await axios.get(CoinList(currency));
@@ -51,6 +52,8 @@ const CoinsTable = () => {
         fetchAllCoins();
 
     }, [currency]);
+
+    
 
 
     return (
@@ -65,7 +68,7 @@ const CoinsTable = () => {
                 Cryptocurrency Rates by Market Cap
             </Typography>
 
-            <Paper className={classes.tablePaper}>
+            <Paper ref={ref} className={classes.tablePaper}>
 
                 <TableContainer className={classes.tableContainer}>
 
