@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { SingleCoin } from '../config/api';
 import { BetaState } from '../context/BetaContext';
-import ReactHtmlParser from "react-html-parser";
+import parse from 'html-react-parser';
 import { LinearProgress } from "@mui/material";
 
 const SingleCoinPage = () => {
@@ -40,7 +40,7 @@ const SingleCoinPage = () => {
             <div className='details'>
                 <h3 className='coinName'>{coin?.name}</h3>
                 <p className='coinDesc'>
-                    {ReactHtmlParser(coin?.description.en.split(". ")[0])}.
+                    {parse(coin?.description.en.split(". ")[0])}.
                 </p>
 
                 <div className='mrtData'>
