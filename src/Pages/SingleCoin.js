@@ -37,8 +37,6 @@ const SingleCoinPage = () => {
                 />
             </div>
 
-            {/* <h3 className='coinName2'>{coin?.name}</h3> */}
-
             <div className='details'>
                 <h3 className='coinName'>{coin?.name}</h3>
                 <p className='coinDesc'>

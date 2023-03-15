@@ -136,7 +136,7 @@ const CoinsTable = () => {
 
                                             <TableCell align="right" className={classes.numbers}>
                                                 {symbol}{" "}
-                                                {row.market_cap?.toLocaleString(navigator.language, { minimumFractionDigits: 0 }).slice(0, -6)}M
+                                                {row.market_cap?.toLocaleString(navigator.language, { minimumFractionDigits: 0 }).slice(0, -6)}B
                                             </TableCell>
 
 

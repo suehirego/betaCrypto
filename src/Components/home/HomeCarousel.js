@@ -18,8 +18,7 @@ const HomeCarousel = () => {
     //currency state
     const { currency, symbol } = BetaState();
 
-    //fetch API
-
+    //fetch Coin
     const fetchTrendingCoins = async () => {
         const { data } = await axios.get(TrendingCoins(currency));
         // console.log(data);
@@ -78,14 +77,6 @@ const HomeCarousel = () => {
 
 
     });
-
-    //resposive carousel
-    // const responsive = {
-    //     0: { items: 2, },
-    //     512: { items: 4 },
-    //     720: { items: 3 },
-    //     1024: { items: 5 },
-    // };
 
     const responsive = {
         0: { items: 2, },
